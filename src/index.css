@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Eco & Culture Tourism App Design System */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 27 15% 8%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 27 15% 8%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 27 15% 8%;
+
+    /* Primary - Deep Forest Green */
+    --primary: 142 69% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 142 69% 45%;
+    --primary-light: 142 69% 85%;
+
+    /* Secondary - Warm Terracotta */
+    --secondary: 25 95% 55%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 25 95% 90%;
+
+    /* Muted earth tones */
+    --muted: 40 15% 96%;
+    --muted-foreground: 27 15% 40%;
+
+    /* Accent - Sky Blue */
+    --accent: 200 85% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Culture Purple */
+    --culture: 280 65% 50%;
+    --culture-foreground: 0 0% 98%;
+
+    /* Success/Eco Green */
+    --success: 120 60% 45%;
+    --success-foreground: 0 0% 98%;
+
+    /* Warning/Adventure Orange */  
+    --warning: 35 100% 55%;
+    --warning-foreground: 0 0% 98%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Form elements */
+    --border: 40 15% 88%;
+    --input: 40 15% 96%;
+    --ring: 142 69% 35%;
+
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.95), hsl(var(--accent) / 0.85));
+    --gradient-eco: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--success)));
+    --gradient-culture: linear-gradient(135deg, hsl(var(--culture)), hsl(var(--accent)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--warning)));
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--primary) / 0.4), hsl(var(--accent) / 0.2));
+
+    /* Premium Shadows */
+    --shadow-soft: 0 2px 8px hsl(var(--primary) / 0.06);
+    --shadow-card: 0 4px 20px hsl(var(--primary) / 0.08);
+    --shadow-elevated: 0 8px 32px hsl(var(--primary) / 0.12);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.25);
+
+    /* Typography scale */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Spacing scale */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+
+    /* Radius scale */
+    --radius-sm: 0.375rem;
+    --radius: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+
+    /* Animation transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 27 15% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 27 15% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 27 15% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 69% 45%;
+    --primary-foreground: 27 15% 8%;
+    --primary-glow: 142 69% 55%;
+
+    --secondary: 25 95% 45%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 27 15% 12%;
+    --muted-foreground: 27 15% 60%;
+
+    --accent: 200 85% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --culture: 280 65% 60%;
+    --culture-foreground: 0 0% 98%;
+
+    --success: 120 60% 55%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 35 100% 45%;
+    --warning-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 27 15% 15%;
+    --input: 27 15% 15%;
+    --ring: 142 69% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Premium Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .hover-float {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-2;
+  }
+
+  .hover-glow {
+    @apply transition-shadow duration-300 ease-out hover:shadow-glow;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/80 dark:bg-black/20 border border-white/20;
+  }
+
+  /* Interactive Map Specific Animations */
+  .map-marker-hover {
+    @apply transition-all duration-300 ease-out hover:scale-125 hover:z-30;
+  }
+
+  .map-tooltip-enter {
+    animation: tooltipEnter 0.3s ease-out;
+  }
+
+  .map-zoom-smooth {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .fullscreen-transition {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Card enhancements */
+  .premium-card {
+    @apply bg-card border border-border/50 rounded-xl shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1;
+  }
+
+  /* Button enhancements */
+  .btn-premium {
+    @apply relative overflow-hidden bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-medium rounded-lg px-6 py-3 transition-all duration-300 hover:scale-105 hover:shadow-glow;
+  }
+
+  /* Hero section enhancements */
+  .hero-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Premium navbar */
+  .navbar-glass {
+    @apply backdrop-blur-lg bg-background/80 border-b border-border/50;
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(40px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  33% { 
+    transform: translateY(-10px) rotate(1deg); 
+  }
+  66% { 
+    transform: translateY(-5px) rotate(-1deg); 
+  }
+}
+
+@keyframes progress {
+  0% { 
+    width: 0%; 
+  }
+  100% { 
+    width: 100%; 
+  }
+}
+
+@keyframes tooltipEnter {
+  0% { 
+    opacity: 0; 
+    transform: translateY(10px) scale(0.95); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
