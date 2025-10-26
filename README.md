@@ -1,6 +1,5 @@
 # Cultouria
 
-[Live Demo](https://lovable.dev/projects/d3b19072-8770-4c48-aac3-e0fa6973adbc)
 
 Cultouria is a modern, fully custom web application for eco-conscious users and travelers, built with **React**, **TypeScript**, **Tailwind CSS**, and **shadcn-ui**, powered by **Vite**.
 
